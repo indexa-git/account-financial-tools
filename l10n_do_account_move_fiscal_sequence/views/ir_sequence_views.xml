@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="sequence_view_inherited" model="ir.ui.view">
+        <field name="name">sequence.view.inherited</field>
+        <field name="model">ir.sequence</field>
+        <field name="inherit_id" ref="base.sequence_view"/>
+        <field name="arch" type="xml">
+            <field name="active" position="after">
+                <field name="l10n_do_internal_sign_xml"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
